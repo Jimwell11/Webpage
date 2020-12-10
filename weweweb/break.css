@@ -1,0 +1,264 @@
+body{ 
+	background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(menu1.jpg);
+	background-repeat:;
+		background-size:cover;
+		height:;
+	width:100%;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		float:right;
+	}
+	
+	li {
+		float: left;
+	}
+	#main{
+		float:right;
+		width:50%%; align:center;
+	}
+	
+	li:last-child {
+		border-right: none;
+	}
+	
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 5px 20px;
+		font-family: poppins;
+		font-size: 16px;
+	}
+	
+	li a:hover:not(.active) {
+		background-color: #6cff00;
+		text-decoration:none;
+		color:#000000;
+	}
+	
+	.active {
+		background-color: #0d6a58;
+	}
+	
+	nav{
+		margin-top:30px;
+		margin-right:40px;
+	}
+	.name{
+		float:letf;
+		padding:0;
+		margin:0;
+		height:110px;
+	
+	}
+	.title{
+		text-align: center;
+		padding:0;
+		margin:0;
+		height:110px;
+	
+	
+	}
+	.title h1{
+		text-align: center;
+		padding:0;
+		margin:0;
+		font-size: 65px;
+		color: white;
+		
+	
+	}
+	#at{
+		height:100px;
+		width:600px;
+		margin-left:10%;
+		margin-top:-30px;
+		color: white;
+		font-family:'Courier New', Courier, monospace;
+		font-size: 30%;
+	}
+	.img-1{
+		left: 0%;
+		top: 0%;
+		margin: 40%;
+		margin-top: 0%;
+		margin-left: 57%;
+	}
+	
+		/* THE MAINCONTAINER HOLDS EVERYTHING */
+	.maincontainer{
+	  position: absolute;
+	  width: 250px;
+	  height: 320px;
+	  background: none;
+	  left: 20%;
+	  top: 30%;
+	  float: left;
+	 
+	}
+	
+	/* THE CARD HOLDS THE FRONT AND BACK FACES */
+	.thecard{
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 10px;
+	  transform-style: preserve-3d;
+	  transition: all 0.8s ease;
+	}
+	
+	/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+	.thecard:hover{
+	  transform: rotateY(180deg);
+	}
+	
+	/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+	 .thefront{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 10px;
+	  backface-visibility: hidden;
+	  overflow: hidden;
+	  background: white;
+	  color: #000;
+	}
+	
+	/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+	.theback{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 10px;
+	  backface-visibility: hidden;
+	  overflow: hidden;
+	  background: #fafafa;
+	  color: #333;
+	  text-align: center;
+	  transform: rotateY(180deg);
+	}
+	
+	.thefront h1, .thefront2 h1, .thefront3 h1, .thefront4 h1, .thefront5 h1, .thefront6 h1{
+	  font-family: 'Berlin', sans-serif;
+	  padding:;
+	  font-weight: bold;
+	  font-size: 28px;
+	  text-align: center;
+	}
+	.theback h1, .theback2 h1, .theback3 h1, .theback4 h1, .theback5 h1, .theback6 h1{
+	  font-family: 'Arial', sans-serif;
+	  padding:10px;
+	  font-weight: bold;
+	  font-size: 28px;
+	  text-align: center;
+	}
+	.thefront p, .thefront2 p, .thefront3 p, .thefront4 p, .thefront5 p, .thefront6 p{
+	  font-family: 'zilla slab', sans-serif;
+	  padding: 30px;
+	  font-weight: normal;
+	  font-size: 12px;
+	  text-align: center;
+	  margin-top:-20px;
+	  font-weight: bold;
+	}
+	
+	.theback p, .theback2 p, .theback3 p, .theback4 p, .theback5 p, .theback6 p{
+	  font-family: 'zilla slab', sans-serif;
+	  font-weight: normal;
+	  font-size: 50px;
+	  text-align: center;
+	  margin-top:-20px;
+	  font-weight: bold;
+	}
+	
+	.maincontainer2{
+	  position: absolute;
+	  width: 250px;
+	  height: 320px;
+	  background: none;
+	  left: 41%;
+	  top: 30%;
+	  float: left;
+	 
+	}
+	/* THE CARD HOLDS THE FRONT AND BACK FACES */
+	.thecard2{
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 10px;
+	  transform-style: preserve-3d;
+	  transition: all 0.8s ease;
+	}
+	
+	/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+	.thecard2:hover{
+	  transform: rotateY(180deg);
+	}
+	
+	/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+	 .thefront2{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 10px;
+	  backface-visibility: hidden;
+	  overflow: hidden;
+	  background: white;
+	  color: #000;
+	}
+	
+	/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+	.theback2{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 10px;
+	  backface-visibility: hidden;
+	  overflow: hidden;
+	  background: #fafafa;
+	  color: #333;
+	  text-align: center;
+	  transform: rotateY(180deg);
+	}
+	
+	.vertical-menu {
+	  width: 170px; 
+	  margin-left: 2%;
+	}
+	
+	.vertical-menu a {
+	  background-color: black; /* Grey background color */
+	  color: white; /* Black text color */
+	  display: block; /* Make the links appear below each other */
+	  padding: 12px; /* Add some padding */
+	  font-family: poppins;
+	  font-weight: bold;
+	}
+	
+	.vertical-menu a:hover {
+	  background-color: white; /* Dark grey background on mouse-over */
+	  color: Black;
+	}
+	
+	.vertical-menu a.active {
+	  background-color:#6cff00; /* Add a green color to the "active/current" link */
+	  color: black;
+	}

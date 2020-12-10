@@ -1,0 +1,166 @@
+body{ 
+background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg1.jpg);
+background-repeat:no-repeat;
+	background-size:cover;
+	height:;
+width:100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float:right;
+}
+
+li {
+    float: left;
+}
+#main{
+	float:right;
+	width:50%%; align:center;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+}
+
+li a:hover:not(.active) {
+    background-color: #6cff00;
+    text-decoration:none;
+    color:#000000;
+}
+
+.active {
+    background-color: #0d6a58;
+}
+
+nav{
+	margin-top:30px;
+	margin-right:40px;
+}
+.name{
+	float:letf;
+	padding:0;
+	margin:0;
+	height:110px;
+
+}
+
+#about{
+	height:100px;
+	width:600px;
+	margin-left:10%;
+	margin-top: 5%;
+	color: white;
+	font-family:Adobe Hebrew;
+	font-size:80px;
+
+}
+
+#at{
+	height:100px;
+	width:600px;
+	margin-left:10%;
+	margin-top:-20px;
+	color: white;
+	font-family:Calibri;
+	font-size:30px;
+}
+#about{
+	background:url("dg.png");
+	margin-top: 30px;
+	color: wheat
+}
+.about-images{
+	position: relative;
+}
+.about-img{
+	position: absolute;
+	width: 200px;
+	transition: all 2s ease;
+	opacity: 0.9;
+}
+.img-1{
+	left: 0%;
+	top: 0%;
+	margin: 40%;
+}
+.img-2{
+	left: 50%;
+	top: 50%;
+	margin: 40%;
+}
+.img-3{
+	left: 45%;
+	top: 45%;
+	margin: 20%;
+}
+.img-4{
+	left: 90%;
+	top: 90%;
+}
+.img-5{
+	left: 40%;
+	top: 40%;
+}
+.about-img:hover{
+	outline: 10px solid #ddbbcc;
+	outline-offset: 32px;
+	transform: scale(1.3) rotate(20deg);
+	z-index: 30;
+	opacity: 1;
+}
+.about-images:hover,
+,about-img:not(hover){
+	opacity: 0.5;
+}
+.btn{
+	color: #ddbbcc;
+	font-weight: bold;
+	border: 5px solid black;
+	font-size: 25px;
+}
+.hvr-right{
+	display: inline-block;
+	vertical-align: middle;
+	transition-duration: 0.5s;
+	transform: perspective(1px) translate(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0);
+	position: relative;
+	transition-property: color;
+}
+.hvr-right:before{
+	content:"";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #ddbbcc;
+	transition-timing-function: ease-out;
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	transition-property: transform;
+	transition-duration: 0.5s;
+}
+.hvr-right:hover,.hvr-right:focus,
+.hvr-right:active{
+	color: #000000;
+}
+.hvr-right:hover:before, .hvr-right:focus:before,
+.hvr-right:active::before{
+	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	transform: scaleX(1)
+}
